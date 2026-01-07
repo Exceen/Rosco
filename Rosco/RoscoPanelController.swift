@@ -24,9 +24,9 @@ class RoscoPanelController : NSWindowController {
         panel.isOpaque = false
 
         panel.isFloatingPanel = true
-        panel.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.desktopWindow)))
+        panel.level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.desktopIconWindow)))
         panel.orderFront(nil)
-        panel.ignoresMouseEvents = true
+        panel.ignoresMouseEvents = false
 
         // Ensure animations are enabled
         panel.animationBehavior = .default
